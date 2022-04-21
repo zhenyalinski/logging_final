@@ -190,3 +190,12 @@
 [2022-04-21 03:07:27,391] [258] 127.0.0.1 requested http://localhost/welcomeINFO in __init__: requestofmine
 [2022-04-21 03:07:27,731] [258] 127.0.0.1 requested http://localhost/page5INFO in __init__: requestofmine
 [2022-04-21 03:07:49,540] [254] 172.24.0.1 requested http://localhost/welcomeINFO in __init__: requestofmine
+[2022-04-21 03:25:49,566] [262] 127.0.0.1 requested http://localhost/INFO in __init__: requestofmine
+[2022-04-21 03:25:49,784] [262] 127.0.0.1 requested http://localhost/dashboardINFO in __init__: requestofmine
+[2022-04-21 03:25:50,146] [262] 127.0.0.1 requested http://localhost/INFO in __init__: requestofmine
+[2022-04-21 03:25:50,362] [262] 127.0.0.1 requested http://localhost/INFO in __init__: requestofmine
+[2022-04-21 03:25:50,596] [262] 127.0.0.1 requested http://localhost/INFO in __init__: requestofmine
+[2022-04-21 03:25:50,809] [262] 127.0.0.1 requested http://localhost/INFO in __init__: requestofmine
+[2022-04-21 03:25:51,016] [262] 127.0.0.1 requested http://localhost/aboutINFO in __init__: requestofmine
+[2022-04-21 03:25:51,234] [262] 127.0.0.1 requested http://localhost/welcomeINFO in __init__: requestofmine
+[2022-04-21 03:25:51,443] [262] 127.0.0.1 requested http://localhost/page5INFO in __init__: requestofmine

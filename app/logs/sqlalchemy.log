@@ -1124,3 +1124,9 @@ FROM users
 WHERE users.id = ?
 2022-04-21 03:07:59,029 [INFO] sqlalchemy.engine.Engine: [cached since 9.461s ago] (3,)
 2022-04-21 03:07:59,055 [INFO] sqlalchemy.engine.Engine: ROLLBACK
+2022-04-21 03:25:50,077 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-04-21 03:25:50,079 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("songs")
+2022-04-21 03:25:50,081 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-04-21 03:25:50,089 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
+2022-04-21 03:25:50,090 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
+2022-04-21 03:25:50,094 [INFO] sqlalchemy.engine.Engine: COMMIT
