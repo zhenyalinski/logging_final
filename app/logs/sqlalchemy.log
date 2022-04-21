@@ -1130,3 +1130,9 @@ WHERE users.id = ?
 2022-04-21 03:25:50,089 [INFO] sqlalchemy.engine.Engine: PRAGMA main.table_info("users")
 2022-04-21 03:25:50,090 [INFO] sqlalchemy.engine.Engine: [raw sql] ()
 2022-04-21 03:25:50,094 [INFO] sqlalchemy.engine.Engine: COMMIT
+2022-04-21 03:38:15,088 [INFO] sqlalchemy.engine.Engine: BEGIN (implicit)
+2022-04-21 03:38:15,090 [INFO] sqlalchemy.engine.Engine: SELECT users.is_active AS users_is_active, users.id AS users_id, users.email AS users_email, users.password AS users_password, users.about AS users_about, users.authenticated AS users_authenticated, users.registered_on AS users_registered_on, users.is_admin AS users_is_admin 
+FROM users 
+WHERE users.id = ?
+2022-04-21 03:38:15,092 [INFO] sqlalchemy.engine.Engine: [cached since 1828s ago] (3,)
+2022-04-21 03:38:15,110 [INFO] sqlalchemy.engine.Engine: ROLLBACK
