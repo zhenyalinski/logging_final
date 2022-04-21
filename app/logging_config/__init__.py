@@ -28,6 +28,8 @@ def after_request_logging(response):
 
     log = logging.getLogger("myApp")
     log.info("My App Logger")
+    log = logging.getLogger("mymessage")
+    log.info('my message')
     return response
 
 
@@ -38,7 +40,8 @@ def configure_logging():
     log.info("My App Logger")
     log = logging.getLogger("myerrors")
     log.info("THis broke")
-
+    log = logging.getLogger("request")
+    log.info("requestofmine")
 
 
 
@@ -104,6 +107,17 @@ LOGGING_CONFIG = {
             'maxBytes': 10000000,
             'backupCount': 5,
         },
+        'file.handler.mymessage': {
+            'class': 'logging.handlers.RotatingFileHandler',
+            'formatter': 'standard',
+            'filename': 'app/logs/mymessage.log',
+            'maxBytes': 10000000,
+            'backupCount': 5,
+
+        },
+
+
+
     },
     'loggers': {
         '': {  # root logger
@@ -135,7 +149,19 @@ LOGGING_CONFIG = {
             'handlers': ['file.handler.errors'],
             'level': 'DEBUG',
             'propagate': False
+
         },
+        'mymessage': {  # if __name__ == '__main__'
+            'handlers': ['file.handler.mymessage'],
+            'level': 'DEBUG',
+            'propagate': False
+        },
+        'request': {  # if __name__ == '__main__'
+            'handlers': ['file.handler.request'],
+            'level': 'DEBUG',
+            'propagate': False
+        },
+
 
     }
 }
